@@ -27,8 +27,8 @@ class Main extends PluginBase implements Listener{
 				 $player = $event->getPlayer(); 
 				 if(!$player->isOp()){ 
 					 if(in_array($player->getLevel()->getName(), $this->dropitemworld)){ 
-						 $event->setCancelled();
 						 $player->sendMessage("§c[Error]§f คุณไม่สามารถทิ้งไอเท็มบนโลกนี้ได้");
+                                                 $event->setCancelled();
 						 }
 				  }
 			}
