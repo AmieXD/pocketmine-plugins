@@ -1,1 +1,7 @@
-
+name: NoDropItem
+main: lubu\Main
+version: 1.0.0
+api: [1.0.0]
+author: lubu79th
+website: https://github/lubu79th
+description: ง่ายปลั้กอิน
