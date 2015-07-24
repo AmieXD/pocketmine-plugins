@@ -2,19 +2,17 @@
 
 namespace lubu;
 
-use pocketmine\plugin\PluginBase;
-
-use pocketmine\event\Listener;
+use pocketmine\Player; 
+use pocketmine\Server; 
 use pocketmine\level;
 use pocketmine\level\Position;
+use pocketmine\event\Listener; 
 use pocketmine\event\player\PlayerDropItemEvent; 
 use pocketmine\entity\DroppedItem; 
-use pocketmine\Player;
-
+use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\math\Vector3;
 use pocketmine\utils\TextFormat;
-use pocketmine\Server;
 
 class Main extends PluginBase implements Listener{
 	 public function onEnable(){
@@ -30,7 +28,7 @@ class Main extends PluginBase implements Listener{
 				 if(!$player->isOp()){ 
 					 if(in_array($player->getLevel()->getName(), $this->dropitemworld)){ 
 						 $event->setCancelled();
-						 $player->sendMessage("§c[Error]§f คุณไม่สามารถทิ้งไอเท็มได้");
+						 $player->sendMessage("§c[Error]§f คุณไม่สามารถทิ้งไอเท็มบนโลกนี้ได้");
 						 }
 				  }
 			}
