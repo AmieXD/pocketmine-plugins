@@ -1,7 +1,7 @@
 name: NoDropItem
 main: lubu\Main
 version: 1.0.0
-api: [1.0.0]
+api: [1.12.0]
 author: lubu79th
 website: https://github.com/lubu79th/pocketmine-plugins/tree/master/NoDropItem
 description: ง่ายปลั้กอิน
